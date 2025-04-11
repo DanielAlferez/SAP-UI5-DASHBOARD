@@ -8,7 +8,7 @@ export function useLeaveRequests() {
   useEffect(() => {
     fetch(process.env.NEXT_PUBLIC_API_URL + "leave_requests")
       .then((res) => res.json())
-      .then((json: any[]) => {
+      .then((json: LeaveRequest[]) => {
         const mapped: LeaveRequest[] = json.map((item) => ({
           id: item.id,
           name: item.name,

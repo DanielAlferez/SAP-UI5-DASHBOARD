@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar, Title } from "@ui5/webcomponents-react";
+import { Bar } from "@ui5/webcomponents-react";
 
 const LeaveTableSkeleton: React.FC = () => {
   return (
